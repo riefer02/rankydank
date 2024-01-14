@@ -1,9 +1,9 @@
 {
-  "name": "tld-epk",
+  "name": "rankydank-official-site",
   "private": true,
-  "description": "The Lewd Dudes EPK",
+  "description": "Official website of Rankydank, featuring the latest music, news, and tour dates",
   "version": "0.1.0",
-  "author": "Andrew Riefenstahl <andrew.riefenstahl@gmail.com>",
+  "author": "Rankydank Team <contact@rankydankmusic.com>",
   "dependencies": {
     "gatsby": "^5.8.1",
     "gatsby-plugin-gatsby-cloud": "^5.8.0",
@@ -29,7 +29,7 @@
     "tailwindcss": "^3.3.1"
   },
   "keywords": [
-    "gatsby"
+    "rankydank", "music", "official", "artist", "band"
   ],
   "license": "0BSD",
   "scripts": {
@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/rankydank/rankydank-official-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/rankydank/rankydank-official-site/issues"
   }
 }

@@ -1,6 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    extend: {
+      colors: {
+        pink: "#F002D2",
+        darkGray: "#111111",
+      },
+    },
     container: {
       padding: {
         DEFAULT: "1rem",

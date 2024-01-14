@@ -1,22 +1,6 @@
 export const biography = [
-  "The Lewd Dudes are the #1 hottest alternative rock band formed in Austin, Texas in 2017 by Andrew Riefenstahl (Producer + Guitar), Riley Sklar (Bass), Rankin Fetzer (Guitar), Scott Morgan (Keys), and Jordan Hughes (Drums).",
-  "The Lewd Dudes are a feel good rock and roll band, and over the course of six years, this ensemble has matured like aging wine.",
-  "Latest Album: Pulling inspiration from their experiences and the collapse of live music during the pandemic, Habitable Zone sets you on a colossal interplanetary exploration of the human condition, self-reflection, mortality, failed relationships, over indulgance, bliss, and the hope for a new beginning.",
-  "Latest Single: The Lewd Dudes went on brief hiatus in the Summer of 2022, but wanted to leave on a high note by releasing their latest single 'Mad in Love', a story about the struggles of love and of course madness.",
-  `Update: The Lewd Dudes are playing Eeyore's Birthday April 29th, 2023 in Austin, Texas in support of the local Austin community with a message to "Keep Austin Weird"`,
+  "Rankydank (Rankin Fetzer) is a musician/Youtuber originally from Houston Texas, currently based in Austin, TX. He is known mostly for live-looping electric guitar, vocals, bass, keys, and electronic drums, through a Boss RC-505 loop-station. This allows him to create (often improvised) funky, dance, intimate, and energetic live performances.",
+  "Rankydank's tunes call inspiration from bands and artists such as Red Hot Chili Peppers, Marc Rebillet, Jimi Hendrix, Parliament Funkadelic, Dua Lipa, Pretty Lights, and the Beatles, along with many other artists from the 60s, 70s, 80s, 90s, 00s, 10s, and 20s.",
+  "Though he has one full-length EP out currently across all streaming platforms(self-titled Rankydank), which is a mostly acoustic set of songs, most of his fans view his work through his live-performance video content available on Youtube.",
+  "Currently, Rankydank is working on his 2nd album, consisting of only Live-looping tracks, as well as putting out content daily/weekly on Youtube/Instagram/TikTok and playing live shows in Austin and surrounding cities/states.",
 ]
-
-const oldBio = `Pulling inspiration from our lived experiences and the inevitable 
-collapse of live music during the pandemic, Habitable Zone (latest release) will set 
-you on a colossal interplanetary exploration of the human condition, the mundane and 
-lackluster, self-reflection and awareness, realization of mortality, failed relationships, 
-over indulgence, enjoying the little things, and the hope for a new beginning. Climb into the 
-capsule and blast off with The Lewd Dudes on this mystifying and awe inspiring journey 
-across time and space. Habitable Zone was produced by The Lewd Dudes, recorded at our 
-studio in South Austin, and mixed by Chris “Frenchie” Smith at The Bubble studio in Austin, 
-Texas. It was mastered by award winning mastering engineer, Christopher Messina, 
-in Austin, Texas.`
-
-const ourMotto = `Our motto: get loud, have fun, uplift the community, and bring people together.`
-
-const getawayAnnouncement = `Latest Single: In spring 2022 they realized their knowledge had grown and decided to champion their own single, "Getaway", which revealed new layers to their musicality by featuring hip-hop artist Curbside Jones.`

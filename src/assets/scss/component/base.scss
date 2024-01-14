@@ -115,7 +115,7 @@ p {
 }
 
 .page-background__image {
-  background-image: url("../../images/green-promo-3840x2160.jpg");
+  background-image: url("../../images/rankydank-colored-horizontal.jpg");
   position: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -144,12 +144,12 @@ p {
 .page-marquee__container {
   @extend .flex-center;
   flex-direction: column;
-  margin-top: rem(55);
+  // margin-top: rem(55);
 
   h1 {
     // font-family: "Chelsea Market";
     text-align: center;
-    margin-top: rem(40);
+    margin-top: rem(00);
 
     @include respond(xxl) {
       font-size: rem(70);
@@ -185,7 +185,11 @@ p {
 }
 
 .page-content__row {
-  margin: rem(60) auto;
+  margin: rem(30) auto;
+
+  @include respond(md) {
+    margin: rem(60) auto;
+  }
 }
 
 .embed {
@@ -297,13 +301,8 @@ p {
   border-radius: rem(50);
   transition: all 0.4s ease-in-out;
   padding: 0 rem(10);
-  background-image: linear-gradient(
-    to right,
-    rgba(#fc6076, 0.7),
-    rgba(#ff9a44, 0.7),
-    rgba(#ef9d43, 0.7),
-    rgba(#e75516, 0.7)
-  );
+  background: #f002d2;
+
   cursor: pointer;
 
   @include respond(md) {
@@ -314,7 +313,7 @@ p {
   }
 
   @include respond(lg) {
-    width: rem(500);
+    width: rem(450);
   }
 
   &:hover {

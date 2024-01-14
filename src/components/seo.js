@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
@@ -23,7 +16,9 @@ function Seo({ description, lang, meta, title }) {
             logo
           }
         }
-        ogImage: file(relativePath: { eq: "the-lewd-dudes-og.png" }) {
+        ogImage: file(
+          relativePath: { eq: "rankydank-colored-horizontal.jpg" }
+        ) {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, pngOptions: { quality: 100 })
           }
@@ -38,36 +33,29 @@ function Seo({ description, lang, meta, title }) {
 
   const schemaMarkup = {
     "@context": "http://schema.org",
-    "@type": "MusicGroup",
-    name: "The Lewd Dudes",
-    "@id": "https://thelewddudes.com",
-    foundingDate: {
-      "@type": "Date",
-      "@value": "2017-06-01",
-    },
-    foundingLocation: {
-      "@type": "City",
-      name: "Austin",
-    },
-    description:
-      "The Lewd Dudes are the hottest feel good alternative rock and roll band, formed in Austin, Texas in 2017 by Andrew Riefenstahl (Producer + Guitar), Riley Sklar (Bass), Rankin Fetzer (Guitar), Scott Morgan (Keys), and Jordan Hughes (Drums).",
-    url: "https://thelewddudes.com",
+    "@type": "Person",
+    name: "Rankydank (Rankin Fetzer)",
+    "@id": "https://rankydank.com",
+    description: metaDescription,
+    url: "https://rankydank.com",
     image: {
       "@type": "ImageObject",
-      url: "https://thelewddudes.com/the-lewd-dudes-og.png",
-      height: "800",
-      width: "1200",
+      url: metaImage.images.fallback.src,
+      height: metaImage.height,
+      width: metaImage.width,
     },
     logo: {
       "@type": "ImageObject",
-      url: "https://thelewddudes.com/tld-album-cover.jpg",
+      url: "https://rankydank.com/rankydank-bg.jpg",
     },
     sameAs: [
-      "https://www.facebook.com/thelewddudes/",
-      "https://www.instagram.com/thelewddudes/",
-      "https://twitter.com/thelewddudes/",
+      "https://www.facebook.com/profile.php?id=100063594009105",
+      "https://www.instagram.com/rankydank/",
+      "https://www.youtube.com/@Rankydank",
+      "https://www.tiktok.com/@rankinfetzer",
+      "https://open.spotify.com/artist/1vU5u1iI6tUaN81oPkJY6v",
     ],
-    genre: ["New Wave", "Alternative Rock"],
+    genre: ["Funk", "Dance", "Rock", "Pop"],
     location: {
       "@type": "Place",
       name: "Austin, TX",
@@ -76,7 +64,7 @@ function Seo({ description, lang, meta, title }) {
       "@type": "ListenAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://open.spotify.com/artist/65dA1HHvGplN8EcCk4YZOQ",
+        urlTemplate: "https://open.spotify.com/artist/1vU5u1iI6tUaN81oPkJY6v",
         actionPlatform: [
           "http://schema.org/DesktopWebPlatform",
           "http://schema.org/IOSPlatform",
@@ -86,53 +74,6 @@ function Seo({ description, lang, meta, title }) {
         contentType: "text/html",
       },
     },
-    member: [
-      {
-        "@type": "Person",
-        name: "Andrew Riefenstahl",
-        memberOf: {
-          "@type": "MusicGroup",
-          name: "The Lewd Dudes",
-        },
-        roleName: ["guitar", "lead vocals", "producer"],
-      },
-      {
-        "@type": "Person",
-        name: "Riley Sklar",
-        memberOf: {
-          "@type": "MusicGroup",
-          name: "The Lewd Dudes",
-        },
-        roleName: ["bass guitar", "vocals"],
-      },
-      {
-        "@type": "Person",
-        name: "Rankin Fetzer",
-        memberOf: {
-          "@type": "MusicGroup",
-          name: "The Lewd Dudes",
-        },
-        roleName: ["guitar", "lead vocals"],
-      },
-      {
-        "@type": "Person",
-        name: "Jordan Hughes",
-        memberOf: {
-          "@type": "MusicGroup",
-          name: "The Lewd Dudes",
-        },
-        roleName: "drums",
-      },
-      {
-        "@type": "Person",
-        name: "Scott Morgan",
-        memberOf: {
-          "@type": "MusicGroup",
-          name: "The Lewd Dudes",
-        },
-        roleName: "keyboards",
-      },
-    ],
   }
 
   return (
@@ -141,7 +82,7 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -161,7 +102,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,

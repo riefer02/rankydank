@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `The Lewd Dudes`,
-    description: `The official destination for The Lewd Dudes, a new wave alternative rock band from Austin, Texas.`,
-    author: `@riefer02`,
-    siteUrl: `https://thelewddudes.com`,
-    logo: `./src/images/favicon-tld-epk.png`,
+    title: `Rankydank`,
+    description: `The official website of Rankydank, a dynamic musician and YouTuber known for live-looping performances, based in Austin, Texas.`,
+    author: `@rankinfetzer`,
+    siteUrl: `https://rankydank.com`,
+    logo: `./src/images/favicon-rankydank.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,19 +23,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Lewd Dudes | Alternative Rock Band | Austin Texas`,
-        short_name: `The Lewd Dudes`,
+        name: `Rankydank | Musician & YouTuber | Austin Texas`,
+        short_name: `Rankydank`,
         start_url: `/`,
-        background_color: `#51dd97`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        theme_color: `#51dd97`,
+        background_color: `#FFC0CB`, // Updated to pink
+        theme_color: `#FFC0CB`, // Updated to pink
         display: `minimal-ui`,
-        icon: `src/images/favicon-tld-epk.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-rankydank.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`, // Uncomment if you wish to use this feature
   ],
 }
