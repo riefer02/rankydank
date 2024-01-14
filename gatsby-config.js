@@ -26,8 +26,8 @@ module.exports = {
         name: `Rankydank | Musician & YouTuber | Austin Texas`,
         short_name: `Rankydank`,
         start_url: `/`,
-        background_color: `#FFC0CB`, // Updated to pink
-        theme_color: `#FFC0CB`, // Updated to pink
+        background_color: `#f002d2`, // Updated to pink
+        theme_color: `#f002d2`, // Updated to pink
         display: `minimal-ui`,
         icon: `src/images/favicon-rankydank.png`,
       },
