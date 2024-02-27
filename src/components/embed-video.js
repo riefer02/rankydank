@@ -1,7 +1,12 @@
 import React from "react"
 
 export default function EmbedVideo({ video }) {
-  const { label, videoId } = video
+  const { label, videoId, short } = video
+
+  const url = short
+    ? "https://www.youtube.com/shorts/"
+    : "https://www.youtube.com/embed/"
+
   return (
     <div className="embed">
       <div className="embed__container">
@@ -9,7 +14,7 @@ export default function EmbedVideo({ video }) {
           title={`Music video: ${label}`}
           className="embed__video"
           frameBorder="0"
-          src={`https://www.youtube.com/embed/${videoId}`}
+          src={`${url}${videoId}`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
