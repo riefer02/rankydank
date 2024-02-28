@@ -3,9 +3,7 @@ import React from "react"
 export default function EmbedVideo({ video }) {
   const { label, videoId, short } = video
 
-  const url = short
-    ? "https://www.youtube.com/shorts/"
-    : "https://www.youtube.com/embed/"
+  const url = "https://www.youtube.com/embed/"
 
   return (
     <div className="embed">

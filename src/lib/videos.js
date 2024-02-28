@@ -13,10 +13,10 @@ export const youtubeVideos = [
     label: "Everything You Ever Really Wanted - Live Loop",
     videoId: "8Y0C17HQ-2U",
   },
-  {
-    id: 2,
-    label: "Redemption Song (Bob Marley Cover)",
-    videoId: "_6VKvUYn9rc",
-  },
+  // {
+  //   id: 2,
+  //   label: "Redemption Song (Bob Marley Cover)",
+  //   videoId: "_6VKvUYn9rc",
+  // },
   { id: 3, label: "Things Just Get Better", videoId: "kRXtzD78GO8" },
 ]
